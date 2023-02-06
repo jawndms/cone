@@ -15,29 +15,33 @@
             font-style: normal;
         }
         /* body태그 자체에 css 요소 부여 */
-        body {
-            font-family: "LeeSeoyun";
+        html, body {
             margin: 0;
+            height: 100%;
             display: flex;
-            justify-content: center;
-
-            background-image: url("./background.png");
+            /* overflow: hidden; */
             background-size: cover;
+            justify-content: center;
+            font-family: "LeeSeoyun";
             background-repeat: no-repeat;
             background-attachment: fixed;
+            background-image: url("./background.png");
         }
         .container {
             width: 390px;
-            background-color: #000;
             height: 100%;
+            display: flex;
+            flex-direction: column;
+            background-color: #000;
         }
         .photos {
             margin-top: 20px;
+            
         }
         .photo-frame {
             background-color: white;
             margin: 15px 20px;
-            height: 200px;
+            height: 190px;
             position: relative;
             
             cursor: pointer;
@@ -46,21 +50,24 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
+            
         }
         .f-title {
+            text-align: center;
             color: white;
             font-size: 25px;
             font-weight: 900;
-            margin-top: 10px;
-            margin-bottom: 15px;
+            margin-top: 20px;
+            margin-bottom: 5px;
         }
         .f-date {
             color: white;
             font-size: 15px;
             font-weight: 500;
-            margin-top: 5px;
-            margin-bottom: 20px;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 0px; 
         }
         #image1 {
             background-image: url("./image3.png");
