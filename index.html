@@ -85,6 +85,9 @@
             background-size: cover;
             background-position: center;
         }
+        #video-frame {
+            background-color: #000;
+        }
         .photo-description {
             color: white;
             background-color: black;
@@ -150,7 +153,7 @@
         // 클릭 기능
         // 1. 선택된 사진의 숫자를 가진 텍스트를 alert 형태로 출력해줌
         function alertText(number) {
-            alert(`${number}번째 추억이에요! 눌러주셔서 감사합니다 :)`);
+            alert(`${number}번째 사진이에요! 눌러주셔서 감사합니다! 누르지마세요:)`);
         }
     </script>
 </head>
@@ -181,7 +184,7 @@
                     음소거 웃음짓다가 터짐
                 </span>
             </div>
-            <div class="photo-frame">
+            <div id="video-frame" class="photo-frame">
                 <iframe class="video" src="https://www.youtube.com/embed/aHqatAEO6O8"
                 frameborder="0">
                 </iframe>
